@@ -1,7 +1,7 @@
 # Chapter 3: Cluster Setup and Configuration - Hands-on Labs
 
 ## Lab 1: Setting Up a Multi-Node Kubernetes Cluster
-
+![Setting Up a Multi-Node Kubernetes Cluster](/Images/chapter03/ch03_lab01_cluster_setup.png)
 ### Objective
 Set up a production-grade Kubernetes cluster with one control plane and two worker nodes using kubeadm.
 
@@ -92,7 +92,7 @@ kubectl expose deployment nginx --port=80 --type=NodePort
 ```
 
 ## Lab 2: Implementing High Availability
-
+![Implementing High Availability](/Images/chapter03/ch03_lab02_ha_setup.png)
 ### Objective
 Configure a highly available control plane with multiple master nodes.
 
@@ -132,7 +132,7 @@ sudo kubeadm join LOAD_BALANCER_IP:6443 --token <token> \
 ```
 
 ## Lab 3: Storage Configuration
-
+![Storage Configuration](/Images/chapter03/ch03_lab03_storage_config.png)
 ### Objective
 Configure different storage solutions including local storage and dynamic provisioning.
 
