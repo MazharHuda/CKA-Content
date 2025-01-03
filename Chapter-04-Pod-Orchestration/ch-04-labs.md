@@ -1,7 +1,7 @@
 # Chapter 4: Pod Orchestration and Scheduling - Hands-on Labs
 
 ## Lab 1: Advanced Pod Configuration and Management
-
+![Advanced Pod Configuration and Management](/Images/chapter04/ch04_lab01_pod_config.png)
 ### Objective
 Learn to create and manage pods with various configurations including multi-container pods, resource constraints, and health checks.
 
@@ -87,7 +87,7 @@ kubectl get events --field-selector involvedObject.name=health-check-demo
 ```
 
 ## Lab 2: Pod Scheduling and Placement
-
+![Pod Scheduling and Placement](/Images/chapter04/ch04_lab02_pod_scheduling.png)
 ### Objective
 Understand and implement various pod scheduling strategies including node selection, affinity, and taints/tolerations.
 
@@ -171,7 +171,7 @@ EOF
 ```
 
 ## Lab 3: Resource Management and QoS
-
+![Resource Management and QoS](/Images/chapter04/ch04_lab03_resource_qos.png)
 ### Objective
 Learn to manage pod resources and implement different Quality of Service (QoS) classes.
 
@@ -242,7 +242,7 @@ spec:
 ```
 
 ## Lab 4: Advanced Pod Patterns
-
+![Advanced Pod Patterns](/Images/chapter04/ch04_lab04_pod_patterns.png)
 ### Objective
 Implement various pod patterns including init containers, sidecars, and pod disruption budgets.
 
