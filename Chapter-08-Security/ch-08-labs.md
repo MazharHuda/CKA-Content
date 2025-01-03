@@ -7,7 +7,7 @@
 - Basic understanding of Kubernetes security concepts
 
 ## Lab 1: Certificate Management and TLS
-
+![ Certificate Management and TLS](/Images/chapter08/ch08_lab01_certificates.png)
 ### Objective
 Learn to create and manage certificates for secure communication in Kubernetes.
 
@@ -57,7 +57,7 @@ kubectl get csr john-developer -o jsonpath='{.status.certificate}' | base64 -d >
 ```
 
 ## Lab 2: RBAC Configuration
-
+![ RBAC Configuration](/Images/chapter08/ch08_lab02_rbac.png)
 ### Objective
 Implement Role-Based Access Control (RBAC) for different user types.
 
@@ -105,7 +105,7 @@ kubectl auth can-i create deployments --namespace=development --as=john
 ```
 
 ## Lab 3: Pod Security Contexts
-
+![Pod Security Contexts](/Images/chapter08/ch08_lab03_security_context.png)
 ### Objective
 Configure and test pod security contexts and policies.
 
@@ -152,7 +152,7 @@ kubectl exec security-context-demo -- ls -l /data
 ```
 
 ## Lab 4: Network Policies
-
+![Network Policies](/Images/chapter08/ch08_lab04_network_policies.png)
 ### Objective
 Implement and test network policies for pod isolation.
 
@@ -202,7 +202,7 @@ kubectl exec test-pod -n policy-demo -- curl backend
 ```
 
 ## Lab 5: Secret Management
-
+![Secret Management](/Images/chapter08/ch08_lab05_secrets.png)
 ### Objective
 Create and manage Kubernetes secrets securely.
 
@@ -255,7 +255,7 @@ spec:
 ```
 
 ## Lab 6: Audit Logging
-
+![Audit Logging](/Images/chapter08/ch08_lab06_audit.png)
 ### Objective
 Configure and analyze Kubernetes audit logging.
 
