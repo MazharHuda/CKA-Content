@@ -7,7 +7,7 @@
 - Basic understanding of monitoring concepts
 
 ## Lab 1: Setting Up Metrics Server
-
+![Setting Up Metrics Server](/Images/chapter09/ch09_lab01_metrics_server.png)
 ### Objective
 Install and configure Metrics Server to collect basic resource metrics.
 
@@ -61,7 +61,7 @@ kubectl top pods --all-namespaces
 ```
 
 ## Lab 2: Implementing Prometheus Monitoring
-
+![Implementing Prometheus Monitoring](/Images/chapter09/ch09_lab02_metrics_flow.png)
 ### Objective
 Set up Prometheus monitoring stack with basic alerting.
 
@@ -118,7 +118,7 @@ spec:
 ```
 
 ## Lab 3: Setting Up Grafana Dashboards
-
+![Setting Up Grafana Dashboards](/Images/chapter09/ch09_lab03_grafana.png)
 ### Objective
 Configure Grafana dashboards for visualizing cluster metrics.
 
@@ -156,7 +156,7 @@ kubectl port-forward -n monitoring svc/prometheus-grafana 3000:80
 ```
 
 ## Lab 4: Implementing Logging Solutions
-
+![Implementing Logging Solutions](/Images/chapter09/ch09_lab04_logging.png)
 ### Objective
 Set up centralized logging using Elasticsearch, Fluentd, and Kibana (EFK stack).
 
@@ -221,7 +221,7 @@ spec:
 ```
 
 ## Lab 5: Implementing Custom Metrics
-
+![Implementing Custom Metrics](/Images/chapter09/ch09_lab05_custom_metrics.png)
 ### Objective
 Set up custom metrics collection and monitoring.
 
