@@ -6,8 +6,10 @@
 - Helm installed
 - Basic understanding of advanced Kubernetes concepts
 
-## Lab 1: Custom Resource Definitions (CRDs)
-
+## Lab 1: source Definitions (CRDs)Custom 
+![source Definitions (CRDs)Custom ](/Images/chapter11/ch11_lab01_crd_creation.png)
+![source Definitions (CRDs)Custom Controller](/Images/chapter11/ch11_lab01_controller.png)
+![source Definitions (CRDs)Custom Interaction](/Images/chapter11/ch11_lab01_interaction.png)
 ### Objective
 Create and manage custom resources in Kubernetes.
 
@@ -61,6 +63,10 @@ spec:
 ```
 
 ## Lab 2: Advanced Scheduling
+![Advanced Scheduling](/Images/chapter11/ch11_lab02_topology_spread.png)
+![Node Affinity](/Images/chapter11/ch11_lab02_node_affinity.png)
+![Strategy](/Images/chapter11/ch11_lab02_strategy.png)
+
 
 ### Objective
 Implement complex scheduling scenarios using pod topology spread constraints and affinity rules.
@@ -119,7 +125,9 @@ spec:
 ```
 
 ## Lab 3: Advanced Networking
-
+![Advanced Networking](/Images/chapter11/ch11_lab03_network_policy.png)
+![Advanced Networking Service Mesh](/Images/chapter11/ch11_lab03_service_mesh.png)
+![Advanced Config](/Images/chapter11/ch11_lab03_advanced_config.png)
 ### Objective
 Configure advanced networking features including network policies and service mesh integration.
 
@@ -184,7 +192,10 @@ spec:
 ```
 
 ## Lab 4: Advanced Storage Configuration
-
+![Advanced Storage Configuration](/Images/chapter11/ch11_lab04_storage_class.png)
+![Advanced Storage Snapshot](/Images/chapter11/ch11_lab04_snapshots.png)
+![Advanced ](/Images/chapter11/ch11_lab04_advanced.png)
+![Advanced Workload Management Strategy](/Images/chapter11/ch11_lab05_strategy.png)
 ### Objective
 Implement advanced storage features including storage classes and volume snapshots.
 
@@ -218,6 +229,9 @@ spec:
 ```
 
 ## Lab 5: Advanced Workload Management
+![Advanced Workload Management](/Images/chapter11/ch11_lab05_pdb.png)
+![Advanced Workload Management VPA](/Images/chapter11/ch11_lab05_vpa.png)
+
 
 ### Objective
 Implement advanced workload features including pod disruption budgets and vertical pod autoscaling.
