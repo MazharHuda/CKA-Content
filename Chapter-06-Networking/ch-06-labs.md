@@ -13,6 +13,7 @@ Understand and implement pod-to-pod communication, network namespaces, and basic
 ### Steps
 
 #### 1.1 Create Test Pods for Networking
+![Create Test Pods for Networking](/Images/chapter06/ch06_lab01_pod_networking.png)
 ```bash
 # Create test pods in different namespaces
 cat <<EOF | kubectl apply -f -
@@ -66,7 +67,7 @@ kubectl exec -n network-test pod-a -- nslookup kubernetes.default
 ```
 
 ## Lab 2: Implementing Services
-
+![Implementing Service](/Images/chapter06/ch06_lab02_services.png)
 ### Objective
 Create and test different types of Kubernetes services.
 
@@ -139,7 +140,7 @@ curl http://$NODE_IP:30080
 ```
 
 ## Lab 3: Network Policies
-
+![Network Policies](/Images/chapter06/ch06_lab03_network_policies.png)
 ### Objective
 Implement and test network policies for pod isolation.
 
@@ -191,7 +192,7 @@ kubectl run -n network-test backend --labels=role=backend --image=busybox -i --r
 ```
 
 ## Lab 4: DNS and Service Discovery
-
+![DNS and Service Discovery](/Images/chapter06/ch06_lab04_dns.png)
 ### Objective
 Understand and implement Kubernetes DNS and service discovery.
 
@@ -249,7 +250,7 @@ EOF
 [Continue with more labs...]
 
 ## Lab 5: Ingress Controllers and Load Balancing
-
+![Ingress Controllers and Load Balancing](/Images/chapter06/ch06_lab05_ingress.png)
 ### Objective
 Set up and configure Ingress Controllers, implement various load balancing strategies, and manage external access to services.
 
@@ -537,7 +538,7 @@ helm uninstall nginx-ingress -n ingress-nginx
 ```
 
 ## Lab 6: Network Troubleshooting
-
+![Network Troubleshooting](/Images/chapter06/ch06_lab06_troubleshooting.png)
 ### Objective
 Learn to diagnose and resolve common Kubernetes networking issues using various troubleshooting tools and techniques.
 
@@ -830,7 +831,7 @@ kubectl delete pod netshoot -n network-test
 ```
 
 ## Lab 7: Advanced Service Configurations
-
+![Advanced Service Configurations](/Images/chapter06/ch06_lab07_advanced_services.png)
 ### Objective
 Implement and understand advanced service configurations including session affinity, ExternalName services, headless services, and multi-port services.
 
@@ -1187,7 +1188,7 @@ Learn to install, configure, and troubleshoot different CNI plugins, understand 
 - Access to CNI configuration directory
 
 ### 8.1 Calico CNI Installation and Configuration
-
+![CNI Plugin Configuration and Management](/Images/chapter06/ch06_lab08_cni.png)
 #### 8.1.1 Install Calico CNI
 ```bash
 # Download Calico manifest
