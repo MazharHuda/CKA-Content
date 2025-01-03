@@ -7,7 +7,7 @@
 - Basic understanding of Kubernetes maintenance concepts
 
 ## Lab 1: Cluster Upgrade Process
-
+![Cluster Upgrade Process](/Images/chapter10/ch10_lab01_upgrade_process.png)
 ### Objective
 Perform a Kubernetes cluster upgrade following the proper procedures and best practices.
 
@@ -59,6 +59,7 @@ kubectl uncordon <control-plane-node>
 ```
 
 ## Lab 2: Node Maintenance
+![Node Maintenances](/Images/chapter10/ch10_lab02_node_maintenance.png)
 
 ### Objective
 Perform maintenance tasks on cluster nodes while ensuring workload availability.
@@ -100,6 +101,7 @@ kubectl describe node <node-name>
 ```
 
 ## Lab 3: Backup and Restore
+![Backup and Restore](/Images/chapter10/ch10_lab03_backup.png)
 
 ### Objective
 Implement and test backup and restore procedures for cluster data.
@@ -143,6 +145,7 @@ spec:
 ```
 
 2. Restore from Backup:
+![Backup and Restore](/Images/chapter10/ch10_lab03_restore.png)
 ```bash
 # Stop kube-apiserver
 systemctl stop kube-apiserver
@@ -161,6 +164,9 @@ systemctl start kube-apiserver
 ```
 
 ## Lab 4: Certificate Management
+![Certificate Management](/Images/chapter10/ch10_lab04_cert_management.png)
+![Certificate CsrFlow](/Images/chapter10/ch10_lab04_csr_flow.png)
+![Certificate Cert rotation](/Images/chapter10/ch10_lab04_cert_rotation.png)
 
 ### Objective
 Manage and rotate cluster certificates.
@@ -200,7 +206,9 @@ spec:
 ```
 
 ## Lab 5: Troubleshooting Scenarios
-
+![Troubleshooting Scenarios](/Images/chapter10/ch10_lab05_recovery.png)
+![Node Troubleshooting Scenarios](/Images/chapter10/ch10_lab05_node_troubleshooting.png)
+![Control_Plane](/Images/chapter10/ch10_lab05_control_plane.png)
 ### Scenario 1: Node Problems
 
 1. Investigate Node Issues:
