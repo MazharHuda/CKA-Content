@@ -1,5 +1,5 @@
 # Chapter 2: Kubernetes Architecture and Core Concepts
-
+![core artitecture](/new-images/chapter02/ch02_core_architecture.png)
 ## 1. Understanding Kubernetes Architecture
 
 ### 1.1 Overview of Kubernetes
