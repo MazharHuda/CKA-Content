@@ -227,6 +227,8 @@ kubectl exec -it test-pod -- wget -qO- http://node-ip:30007
 
 ### Lab 4: Network Policies and Pod Communication
 
+![Network Policies and Pod Communication](/Images/chapter02/ch02_lab04_network.png)
+
 #### Objective
 Implement and test Network Policies to control pod-to-pod communication.
 
@@ -331,6 +333,7 @@ kubectl exec -n dev test-pod -- curl -s backend.prod
 - [ ] Confirm other pods cannot access backend
 
 ### Lab 5: Storage Configuration
+![Storage Configuration](/Images/chapter02/ch02_lab05_storage.png)
 
 #### Objective
 Configure and test different types of storage in Kubernetes.
@@ -421,6 +424,7 @@ EOF
 - [ ] Test data persistence
 
 ### Lab 6: Security Implementation
+![Security Implementation](/Images/chapter02/ch02_lab06_security.png)
 
 #### Objective
 Implement basic security measures including RBAC and Secrets.
@@ -453,7 +457,7 @@ kubectl create rolebinding read-pods \
 [Continue with more security labs...]
 
 ### Lab 7: Comprehensive Storage Management in Kubernetes
-
+![Comprehensive Storage Management in Kubernetes](/Images/chapter02/ch02_lab07_storage.png)
 #### Objective
 Master different storage concepts in Kubernetes including PV, PVC, StorageClasses, and dynamic provisioning.
 
@@ -744,7 +748,7 @@ kubectl delete sc fast-storage
 ```
 Security 
 ### Lab 8: Kubernetes Security Implementation
-
+![Kubernetes Security Implementation](/Images/chapter02/ch02_lab08_security.png)
 #### Objective
 Implement and understand Kubernetes security concepts including RBAC, Security Contexts, Network Policies, and Secrets.
 
@@ -1067,7 +1071,7 @@ rm app.key app.csr username.txt password.txt
 Troubleshooting
 
 ### Lab 9: Kubernetes Troubleshooting Scenarios
-
+![Kubernetes Troubleshooting Scenarios](/Images/chapter02/ch02_lab09_troubleshooting.png)
 #### Objective
 Learn to diagnose and resolve common Kubernetes issues across different components and resources.
 
