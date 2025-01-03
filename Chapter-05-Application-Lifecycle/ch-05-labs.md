@@ -13,6 +13,7 @@ Learn to implement different deployment strategies including rolling updates, bl
 ### Steps
 
 #### 1.1 Rolling Update Implementation
+![Rolling Update Implementation](/Images/chapter05/ch05_lab01_rolling_update.png)
 ```bash
 # Create initial deployment
 cat <<EOF | kubectl apply -f -
@@ -56,6 +57,7 @@ kubectl rollout undo deployment/web-app
 ```
 
 #### 1.2 Blue-Green Deployment
+![Blue-Green Deployment](/Images/chapter05/ch05_lab01_blue_green.png)
 ```bash
 # Create blue deployment
 cat <<EOF | kubectl apply -f -
@@ -100,7 +102,7 @@ EOF
 
 # Create green deployment and switch service
 # (Update service selector to version: green)
-```
+```![Canary Deployment](/Images/chapter05/ch05_lab01_blue_green.png)
 
 ## Lab 2: Configuration Management
 
@@ -110,6 +112,8 @@ Implement various configuration management techniques using ConfigMaps and Secre
 ### Steps
 
 #### 2.1 ConfigMap Management
+![ConfigMap Management](/Images/chapter05/ch05_lab02_configmap.png)
+
 ```bash
 # Create ConfigMap from literals
 kubectl create configmap app-config \
@@ -150,6 +154,7 @@ EOF
 ```
 
 #### 2.2 Secret Management
+![Secret Management](/Images/chapter05/ch05_lab02_secrets.png)
 ```bash
 # Create secret
 kubectl create secret generic db-creds \
@@ -180,6 +185,7 @@ spec:
           key: password
 EOF
 ```
+![Update Workflow](/Images/chapter05/ch05_lab02_update_flow.png)
 
 ## Lab 3: Application Scaling
 
@@ -189,6 +195,8 @@ Implement and test different scaling strategies including manual and automatic s
 ### Steps
 
 #### 3.1 Manual Scaling
+![Manual Scaling](/Images/chapter05/ch05_lab03_manual_scaling.png)
+
 ```bash
 # Create deployment
 kubectl create deployment scaling-demo --image=nginx:1.19
@@ -201,6 +209,7 @@ kubectl get pods -w
 ```
 
 #### 3.2 Horizontal Pod Autoscaling
+![Horizontal Pod Autoscaling](/Images/chapter05/ch05_lab03_hpa.png)
 ```bash
 # Create deployment with resource requests
 cat <<EOF | kubectl apply -f -
@@ -243,7 +252,7 @@ kubectl run -i --tty load-generator \
 # Monitor scaling
 kubectl get hpa -w
 ```
-
+![Load Test](/Images/chapter05/ch05_lab03_load_test.png)
 ## Lab 4: Health Checks and Probes
 
 ### Objective
@@ -252,6 +261,10 @@ Implement and test different types of health checks and probes.
 ### Steps
 
 #### 4.1 Implementing Health Checks
+![Health Checks and Probes](/Images/chapter05/ch05_lab04_health_checks.png)
+
+![Probe flow](/Images/chapter05/ch05_lab04_probe_flow.png)
+![Probe flow Timing](/Images/chapter05/ch05_lab04_probe_timing.png)
 ```bash
 cat <<EOF | kubectl apply -f -
 apiVersion: v1
@@ -338,6 +351,7 @@ Implement Canary and A/B testing deployment patterns using different approaches.
 - Istio installed (for advanced traffic management)
 
 ### 5.1 Canary Deployment Using Native Kubernetes
+![Canary Deployment Using Native Kubernetes](/Images/chapter05/ch05_lab05_shadow.png)
 
 #### Step 1: Create Base Deployment
 ```bash
@@ -428,6 +442,7 @@ kubectl top pods -l app=myapp
 ```
 
 ### 5.2 A/B Testing Using Istio
+![ A/B Testing Using Istio](/Images/chapter05/ch05_lab05_ab_testing.png)
 
 #### Step 1: Create Two Versions of the Application
 ```bash
@@ -522,7 +537,7 @@ EOF
 ```
 
 ### 5.3 Progressive Delivery Using Flagger
-
+![ Progressive Delivery Using Flagger](/Images/chapter05/ch05_lab05_feature_toggle.png)
 #### Step 1: Install Flagger
 ```bash
 # Add Flagger Helm repository
@@ -668,7 +683,7 @@ Implement and manage applications across multiple Kubernetes clusters with diffe
 - Istio installed (optional, for advanced traffic management)
 
 ### 6.1 Setting Up Multi-cluster Environment
-
+![ Setting Up Multi-cluster Environment](/Images/chapter05/ch05_lab06_multicluster.png)
 #### Step 1: Configure kubectl Contexts
 ```bash
 # List current contexts
@@ -717,7 +732,7 @@ EOF
 ```
 
 ### 6.2 Implementing Active-Active Deployment
-
+![ Implementing Active-Active Deployment](/Images/chapter05/ch05_lab06_active_active.png)
 #### Step 1: Deploy Application to Both Clusters
 ```bash
 # Create deployment template
@@ -782,6 +797,7 @@ done
 
 ### 6.3 Implementing Active-Passive Deployment
 
+![Implementing Active-Passive Deployment](/Images/chapter05/ch05_lab06_dr.png)
 #### Step 1: Deploy Primary Cluster
 ```bash
 # Create deployment with primary label
