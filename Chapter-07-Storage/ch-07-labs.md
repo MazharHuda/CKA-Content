@@ -6,7 +6,7 @@
 - Basic understanding of Kubernetes storage concepts
 
 ## Lab 1: Configuring Pod Storage with EmptyDir
-![Configuring Pod Storage with EmptyDir](/Images/chapter06/ch07_lab01_emptydir.png)
+![Configuring Pod Storage with EmptyDir](/Images/chapter07/ch07_lab01_emptydir.png)
 ### Objective
 Create and manage temporary storage between containers using EmptyDir volumes.
 
@@ -45,7 +45,7 @@ kubectl exec -it shared-volume-pod -c container1 -- cat /data/timestamp.txt
 ```
 
 ## Lab 2: Working with PersistentVolumes and Claims
-![Working with PersistentVolumes and Claims](/Images/chapter06/ch07_lab02_pv_pvc.png)
+![Working with PersistentVolumes and Claims](/Images/chapter07/ch07_lab02_pv_pvc.png)
 ### Objective
 Create and manage persistent storage using PV and PVC.
 
@@ -111,7 +111,7 @@ kubectl get pv,pvc,pod
 ```
 
 ## Lab 3: Implementing Dynamic Volume Provisioning
-![Implementing Dynamic Volume Provisioning](/Images/chapter06/ch07_lab03_dynamic_provisioning.png)
+![Implementing Dynamic Volume Provisioning](/Images/chapter07/ch07_lab03_dynamic_provisioning.png)
 ### Objective
 Set up and use Storage Classes for dynamic volume provisioning.
 
@@ -153,7 +153,7 @@ kubectl get sc,pvc
 ```
 
 ## Lab 4: Storage Troubleshooting Scenarios
-![Storage Troubleshooting Scenarios](/Images/chapter06/ch07_lab04_troubleshootingg.png)
+![Storage Troubleshooting Scenarios](/Images/chapter07/ch07_lab04_troubleshootingg.png)
 ### Scenario 1: PVC Binding Issues
 
 1. Check PVC status:
